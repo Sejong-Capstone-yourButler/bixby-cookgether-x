@@ -1,0 +1,14 @@
+structure (WaitingList) {
+  description (__DESCRIPTION__)
+  property (minimum) {
+    type ()
+    min (Required)
+  }
+  property(name) {
+    type(MenuName)
+    min(Required)
+  }
+  property(serving) {
+    
+  }
+}

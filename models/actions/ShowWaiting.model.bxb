@@ -1,0 +1,19 @@
+action (ShowWaiting) {
+  description (__DESCRIPTION__)
+  type(Search)
+  collect {
+    input (menuname) {
+      type (MenuName)
+      min (Required)
+    }
+  }
+  output (WaitingList) {
+    on-empty{
+      halt{
+        dialog{
+          template ("메뉴명을 말해주세요.")
+        }
+      }
+    }
+  }
+}

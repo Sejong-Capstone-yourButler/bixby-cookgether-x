@@ -1,0 +1,10 @@
+structure (OrderList) {
+  property (name) {
+    type (MenuName)
+    min (Required)
+  }
+  property (num) {
+    type(MenuNum)
+    min (Required)
+  }
+}

@@ -1,0 +1,5 @@
+action (SpeakSales) {
+  description (__DESCRIPTION__)
+  type(Search)
+  output (SalesList)
+}

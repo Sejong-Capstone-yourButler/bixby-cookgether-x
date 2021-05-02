@@ -1,0 +1,3 @@
+integer (StockNum) {
+  description (__DESCRIPTION__)
+}

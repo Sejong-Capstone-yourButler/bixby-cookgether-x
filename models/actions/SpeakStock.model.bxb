@@ -1,0 +1,19 @@
+action (SpeakStock) {
+  description (__DESCRIPTION__)
+  type(Search)
+  collect {
+    input (menuname) {
+      type (MenuName)
+      min (Required)
+    }
+  }
+  output (StockList) {
+    on-empty{
+      halt{
+        dialog{
+          template ("")
+        }
+      }
+    }
+  }
+}

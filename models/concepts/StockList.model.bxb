@@ -1,0 +1,11 @@
+structure (StockList) {
+  description (__DESCRIPTION__)
+  property (name) {
+    type (StockName)
+    min (Required)
+  }
+  property (num) {
+    type (StockNum)
+    min (Required)
+  }
+}

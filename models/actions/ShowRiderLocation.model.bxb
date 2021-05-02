@@ -1,0 +1,13 @@
+action (ShowRiderLocation) {
+  description (__DESCRIPTION__)
+  type(Search)
+  output (RiderDistance) {
+     on-empty{
+      halt{
+        dialog{
+          template ("아직 라이더가 배정되지 않았습니다.")
+        }
+      }
+    }
+  }
+}

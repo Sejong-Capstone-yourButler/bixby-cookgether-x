@@ -1,0 +1,19 @@
+structure (SalesList) {
+  description (__DESCRIPTION__)
+  property (name) {
+    type (MenuName)
+    min (Required)
+  }
+  property (num) {
+    type (MenuNum)
+    min (Required)
+  }
+  property (price) {
+    type (Price)
+    min (Required)
+  }
+  property(total) {
+    type()
+    min(Required)
+  }
+}

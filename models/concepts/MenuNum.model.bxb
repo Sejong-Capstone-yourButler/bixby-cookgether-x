@@ -1,0 +1,3 @@
+integer (MenuNum) {
+  description (__DESCRIPTION__)
+}
