@@ -1,5 +1,5 @@
 structure (SalesList) {
-  description (__DESCRIPTION__)
+  description (정산 내역)
   property (name) {
     type (MenuName)
     min (Required)
@@ -13,7 +13,7 @@ structure (SalesList) {
     min (Required)
   }
   property(total) {
-    type()
+    type(TotalPrice)
     min(Required)
   }
 }

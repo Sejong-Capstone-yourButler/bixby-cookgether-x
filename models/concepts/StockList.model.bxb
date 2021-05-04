@@ -1,11 +1,11 @@
 structure (StockList) {
-  description (__DESCRIPTION__)
+  description (재고 내역)
   property (name) {
     type (StockName)
-    min (Required)
+    min (Required) max(Many)
   }
   property (num) {
     type (StockNum)
-    min (Required)
+    min (Required) max(Many)
   }
 }
