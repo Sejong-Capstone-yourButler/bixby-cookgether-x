@@ -1,3 +1,3 @@
 name (StockName) {
-  description (__DESCRIPTION__)
+  description (메뉴의 재고 이름)
 }

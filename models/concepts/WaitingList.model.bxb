@@ -1,14 +1,15 @@
 structure (WaitingList) {
-  description (__DESCRIPTION__)
+  description (대기인원 관리)
   property (minimum) {
-    type ()
+    type (Minimum)
     min (Required)
   }
   property(name) {
     type(MenuName)
-    min(Required)
+    min(Required) max(Many)
   }
   property(serving) {
-    
+    type(Serving)
+    min(Required)
   }
 }

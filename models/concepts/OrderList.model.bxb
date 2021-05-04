@@ -1,10 +1,11 @@
 structure (OrderList) {
+  description (현재 주문 내역)
   property (name) {
     type (MenuName)
-    min (Required)
+    min (Optional) max(Many)
   }
   property (num) {
     type(MenuNum)
-    min (Required)
+    min (Optional) max(Many)
   }
 }

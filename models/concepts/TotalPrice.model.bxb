@@ -1,0 +1,3 @@
+integer (TotalPrice) {
+  description (정산에서 총 수입)
+}
