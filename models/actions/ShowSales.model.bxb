@@ -1,5 +1,5 @@
 action (ShowSales) {
-  description (__DESCRIPTION__)
+  description (정산 내역을 화면에 보여준다)
   type(Search)
   
   output (SalesList)

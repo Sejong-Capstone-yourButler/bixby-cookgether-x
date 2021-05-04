@@ -1,5 +1,5 @@
 action (ShowStock) {
-  description (__DESCRIPTION__)
+  description (물어보는 메뉴의 재고를 화면에 보여준다.)
   type(Search)
   collect {
     input (menuname) {
@@ -8,7 +8,7 @@ action (ShowStock) {
     }
   }
   output (StockList) {
-    on-empty{
+    on-empty{ // 에러처리 수정필요
       halt{
         dialog{
           template ("")

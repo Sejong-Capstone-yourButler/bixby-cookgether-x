@@ -1,8 +1,8 @@
-action (ShowRiderLocation) {
-  description (__DESCRIPTION__)
+action (ShowRiderLocation) { // 수정 필요
+  description (모바일 앱을 실행해서 위치를 보여준다.)
   type(Search)
-  output (RiderDistance) {
-     on-empty{
+  output (RiderDistance) { 
+     on-empty{ // 에러처리 수정 필요
       halt{
         dialog{
           template ("아직 라이더가 배정되지 않았습니다.")

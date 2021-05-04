@@ -1,5 +1,5 @@
 action (SpeakLocation) {
-  description (__DESCRIPTION__)
+  description (배달원의 위치를 말해준다.)
   type(Search)
   output (RiderDistance) {
      on-empty{

@@ -1,5 +1,5 @@
 action (SpeakSales) {
-  description (__DESCRIPTION__)
+  description (정산 내역을 말해준다.)
   type(Search)
   output (SalesList)
 }

@@ -1,5 +1,5 @@
 action (ShowOrder) {
-  description (__DESCRIPTION__)
+  description (주문 내역을 화면에 보여준다)
   type(Search)
   output (OrderList) {
     on-empty{
