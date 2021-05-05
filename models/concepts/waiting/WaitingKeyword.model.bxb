@@ -1,4 +1,0 @@
-enum (WaitingKeyword) {
-  description (추가 수용 가능한 인원 발화 키워드)
-  symbol (추가수용가능인원수)
-}
