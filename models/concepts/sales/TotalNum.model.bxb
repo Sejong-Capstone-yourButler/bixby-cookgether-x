@@ -1,0 +1,3 @@
+integer (TotalNum) {
+  description (총 판매 수)
+}
