@@ -1,0 +1,4 @@
+enum (StockKeyword) {
+  description (재고내역 발화 키워드)
+  symbol (재고)
+}
