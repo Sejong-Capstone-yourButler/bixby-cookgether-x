@@ -7,6 +7,10 @@ action (SpeakStock) {
       type (IngredientName)
       min (Required)
     }
+    input (stockKeyword) {
+      type (StockKeyword)
+      min (Optional)
+    }
     input(request) {
       type(Request)
       min(Required)
