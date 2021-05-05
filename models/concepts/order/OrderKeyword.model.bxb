@@ -1,0 +1,4 @@
+enum (OrderKeyword) {
+  description (주문내역 발화 키워드)
+  symbol (주문내역)
+}

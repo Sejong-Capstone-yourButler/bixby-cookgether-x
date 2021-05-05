@@ -1,0 +1,4 @@
+enum (RiderKeyword) {
+  description (배달원위치조회 발화 키워드)
+  symbol (배달원위치)
+}

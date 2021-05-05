@@ -1,0 +1,4 @@
+enum (WaitingKeyword) {
+  description (대기인원관리 발화 키워드)
+  symbol (추가수용가능인원수)
+}

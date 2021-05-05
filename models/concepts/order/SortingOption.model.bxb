@@ -1,0 +1,5 @@
+enum (SortingOption) {
+  description (정렬 옵션)
+  symbol (시간순)
+  symbol (수량순)
+}

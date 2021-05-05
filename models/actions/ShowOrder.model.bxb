@@ -1,6 +1,22 @@
 action (ShowOrder) {
   description (주문 내역을 화면에 보여준다)
+  // 주문내역 % 시간순으로 % 알려줘
   type(Search)
+  collect {
+    input (align) {
+      type (SortingOption)
+      min (Optional)
+    }
+    input (orderKeyword) {
+      type(OrderKeyword)
+      min (Optional)
+    }
+    input (request) {
+      type(Request)
+      min(Required) max (One)
+    }
+  }
+
   output (OrderList) {
     on-empty{
       halt{

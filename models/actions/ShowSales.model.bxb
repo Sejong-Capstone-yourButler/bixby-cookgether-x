@@ -1,6 +1,16 @@
 action (ShowSales) {
   description (정산 내역을 화면에 보여준다)
+  // 정산내역 % 보여줘
   type(Search)
-  
+  collect {
+    input (salesKeyword) {
+      type(SalesKeyword)
+      min (Required)
+    }
+    input (request) {
+      type(Request)
+      min(Required) max (One)
+    }
+  }
   output (SalesList)
 }

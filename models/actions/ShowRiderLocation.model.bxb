@@ -1,8 +1,19 @@
-action (ShowRiderLocation) { // 수정 필요
+action (ShowRiderLocation) { 
   description (모바일 앱을 실행해서 위치를 보여준다.)
+  // 배달원위치 % 보여줘
   type(Search)
-  output (RiderDistance) { 
-     on-empty{ // 에러처리 수정 필요
+  collect {
+    input (riderKeyword) {
+      type(RiderKeyword)
+      min (Required)
+    }
+    input (request) {
+      type(Request)
+      min(Required) max (One)
+    }
+  }
+  output (RiderDistance) {  // 앱 연결(수정 필요)
+     on-empty{ 
       halt{
         dialog{
           template ("아직 라이더가 배정되지 않았습니다.")

@@ -4,8 +4,16 @@ structure (OrderList) {
     type (MenuName)
     min (Optional) max(Many)
   }
+  property (align) { // 이거는 주문 내역 말할때 필요한가? 
+    type (SortingOption)
+    min (Optional) max (One) 
+  }
   property (num) {
     type(MenuNum)
     min (Optional) max(Many)
+  }
+  property (stat) {
+    type(Status)
+    min (Optional)
   }
 }

@@ -1,0 +1,6 @@
+enum (Request) {
+  description (요청)
+  
+  symbol ("말해줘")
+  symbol ("보여줘")
+}

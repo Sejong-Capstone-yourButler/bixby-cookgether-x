@@ -4,7 +4,7 @@ structure (SalesList) {
     type (MenuName)
     min (Required)
   }
-  property (num) {
+  property (num) { // 총 판매
     type (MenuNum)
     min (Required)
   }

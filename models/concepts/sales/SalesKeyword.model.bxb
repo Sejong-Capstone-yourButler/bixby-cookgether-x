@@ -1,0 +1,4 @@
+enum (SalesKeyword) {
+  description (정산 내역 발화 키워드)
+  symbol (정산 내역)
+}
