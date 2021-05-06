@@ -3,13 +3,13 @@ action (ShowOrder) {
   // 주문내역 % 시간순으로 % 알려줘
   type(Search)
   collect {
-    input (align) {
-      type (SortingOption)
-      min (Optional)
-    }
     input (orderKeyword) {
       type(OrderKeyword)
-      min (Optional)
+      min (Required)
+    }
+    input (align) {
+      type (SortingOption)
+      min (Optional) max (One)
     }
     input (request) {
       type(Request)
@@ -17,7 +17,7 @@ action (ShowOrder) {
     }
   }
 
-  output (OrderList) {
+  output (OrderResult) {
     on-empty{
       halt{
         dialog{
