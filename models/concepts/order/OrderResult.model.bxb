@@ -1,0 +1,19 @@
+structure (OrderResult) {
+  description (주문 내역 기능의 output)
+  property(orderID) {
+    type(OrderID)
+    min (Required) max (One)
+  }
+  property (orderList) {
+    type (OrderList)
+    min (Required) max (Many)
+  }
+  property (price) {
+    type(TotalPrice)
+    min (Required) max(One)
+  }
+  property (stat) {
+    type(Status)
+    min (Required) max(One)
+  }
+}
