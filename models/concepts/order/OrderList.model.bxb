@@ -1,19 +1,11 @@
 structure (OrderList) {
-  description (현재 주문 내역)
-  property (name) {
+  description (주문 내용)
+  property (menuName) {
     type (MenuName)
-    min (Optional) max(Many)
+    min (Required) max(One)
   }
-  property (align) { // 이거는 주문 내역 말할때 필요한가? 
-    type (SortingOption)
-    min (Optional) max (One) 
-  }
-  property (num) {
+  property (menuNum) {
     type(MenuNum)
-    min (Optional) max(Many)
-  }
-  property (stat) {
-    type(Status)
-    min (Optional)
+    min (Required) max(One)
   }
 }
