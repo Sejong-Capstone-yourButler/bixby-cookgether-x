@@ -1,0 +1,17 @@
+result-view {
+  match: OrderResult(this)
+
+  message {
+    template("주문 내역") {
+      speech("주문 내역입니다.")
+    }
+  }
+
+  render {
+    layout-macro(resultDetails) {
+      param(resultInfo) {
+        expression(this)
+      }
+    }
+  }
+}

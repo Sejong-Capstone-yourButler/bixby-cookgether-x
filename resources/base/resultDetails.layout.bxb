@@ -1,0 +1,41 @@
+layout-macro-def (resultDetails) {
+  
+  params {
+    param(resultInfo) {
+      type (OrderResult)
+      min(Required) max(One)
+    }
+  }
+
+  content {
+    compound-card {
+      content {
+        paragraph {
+          style (Title_M)
+          value("주문 번호 : #{value(resultInfo.orderID)}")
+        }
+        for-each(resultInfo.orderList) {
+          as(menuList) {
+            single-line {
+              text {
+                style(Title_S)
+                value("#{value(resultInfo.menuName[{i}])} #{value(resultInfo.menuNum[{i}])}개")
+              }
+            }
+          }
+        }
+        paragraph {
+          style (Detail_M)
+          value("가격 : #{value(resultInfo.price)}")
+        }
+        paragraph {
+          style (Detail_M)
+          value("상태 : #{value(resultInfo.stat)}")
+        }
+      }
+      on-click {
+        view-for (resultInfo)
+      }
+    }
+  }
+}
