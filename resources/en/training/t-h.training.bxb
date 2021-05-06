@@ -1,0 +1,5 @@
+train (t-hi48z2oz683bxs7e96u2ddht7) {
+  utterance ("[g:StockList] (show)[v:Request:보여줘] (cutlet)[v:IngredientName:품목] (stock)[v:StockKeyword:재고]")
+  plan (Y2BlkC/ISaxML8ovzUvRS87Pz05PLclILdILLslPzvbJLC7BqSAjvxysiEEFuwLPvPSi1JTM1LwSv8TcVAZZ7KqCUgtLU4G2KOFxhndqZXl+UQoDCwMjAxMDM5BmALIgEAZAYlA5AA==)
+  last-modified (1620335025424)
+}

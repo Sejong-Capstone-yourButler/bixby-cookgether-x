@@ -2,4 +2,9 @@ hints {
   // uncategorized {
   //   hint (With Example Capsule, perform an action)
   // }
+  uncategorized{
+    hint("In Cookgether,Show Stock List")
+    hint("In Cookgether,Show Sales List")
+    hint("In Cookgether,Show Order List")
+  }
 }

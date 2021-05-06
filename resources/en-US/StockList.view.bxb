@@ -1,0 +1,26 @@
+result-view{
+  match:StockList(this)
+
+  message{
+    template("Stock List")
+  }
+  render{
+    layout{
+      section{
+        content{
+          for-each(this){
+            as(Stock){
+              divider
+              layout-macro(stockList){
+                param(Stock){
+                  expression(Stock)
+                }
+              }
+              divider
+            }
+          }
+        }
+      }
+    }
+  }
+}
