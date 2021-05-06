@@ -12,5 +12,10 @@ endpoints {
     //     method (__HTTP_METHOD_USED__)
     //   }
     // }
+    action-endpoint(ShowStock)
+    {
+      accepted-inputs(ingredientName,stockKeyword,request)
+      local-endpoint(stockList.js)
+    }
   }
 }

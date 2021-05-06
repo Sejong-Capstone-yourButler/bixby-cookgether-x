@@ -7,22 +7,15 @@ action (ShowStock) {
       type (IngredientName)
       min (Required)
     }
-    input (stockKeyword) {
-      type (StockKeyword)
-      min (Optional)
+    input(stockKeyword){
+      type(StockKeyword)
+      min(Optional)
     }
-    input(request) {
+    input(request){
       type(Request)
       min(Required)
     }
   }
   output (StockList) {
-    on-empty{ // 에러처리 수정필요
-      halt{
-        dialog{
-          template ("")
-        }
-      }
-    }
   }
 }

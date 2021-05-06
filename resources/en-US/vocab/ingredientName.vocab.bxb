@@ -1,0 +1,4 @@
+vocab(IngredientName)
+{
+  "품목" {"Cutlet" "cutlet"}
+}

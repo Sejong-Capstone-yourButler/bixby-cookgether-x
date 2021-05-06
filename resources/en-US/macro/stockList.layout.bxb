@@ -1,0 +1,22 @@
+layout-macro-def(stockList) {
+  params {
+    param (Stock) {
+      type (StockList)
+      min (Required)
+    }
+  }
+  content {
+     compound-card{  // this macro returns a "section"
+      content {
+        paragraph {
+          value ("Stock : #{value(Stock.ingredientName)}")
+          style (Detail_L_Soft)
+        }
+        paragraph{
+          value("Stock Count : #{value(Stock.stockNum)}")
+          style(Detail_M_Soft)
+        }
+      }
+    }
+  }
+}

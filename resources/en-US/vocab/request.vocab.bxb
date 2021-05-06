@@ -1,0 +1,5 @@
+vocab(Request)
+{
+  "말해줘" {"Say"}
+  "보여줘" {"Show"}
+}
